@@ -6,18 +6,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const contents = [
         { 
-            title: "NBA GOATs",
+            title: "CERMAIC COATING",
             text: "Legends like Michael Jordan, LeBron James, and Kobe Bryant have defined the greatness in NBA history.",
             link: "link-to-detailed-page-1.html" 
         },
         { 
-            title: "Dirk Nowitzki",
-            text: "A revolutionary player known for his unique playstyle and loyalty to the Dallas Mavericks.",
+            title: "$39.99 MONTHLY WASHES",
+            text: "RECIEVE THAT SPECIAL CAR CARE ON A MONTLY BASIS WITH OUR 'WE COME TO YOU' MEMBERSHIP",
             link: "link-to-detailed-page-2.html" 
         },
         { 
-            title: "Jayson Tatum",
-            text: "An emerging superstar for the Boston Celtics, known for his scoring ability and athleticism.",
+            title: "WE COME TO YOU",
+            text: "WE OFFER MOBILE AUTO DETAILING! VIEW OUR DETAILING PACKAGES:",
             link: "link-to-detailed-page-3.html" 
         },
         // Add more content as needed
