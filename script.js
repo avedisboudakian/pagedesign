@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
             updateCarousel(index);
         });
     });
-
+    
     // Carousel timer
     setInterval(() => {
         let newIndex = currentIndex + 1;

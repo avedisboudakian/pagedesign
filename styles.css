@@ -81,6 +81,7 @@ body, html {
 .carousel-content {
     position: relative;
     height: 100%; /* Adjusted for thinner divider */
+    
 }
 
 .carousel-image {
@@ -138,6 +139,7 @@ body, html {
 	padding:18px 31px;
 	text-decoration:none;
 	text-shadow:0px 0px 0px #e3aa24;
+    z-index: 2;
 }
 .learn-more:hover {
 	background-color:transparent;
@@ -154,6 +156,7 @@ body, html {
     left: 50%;
     transform: translateX(-50%);
     display: flex;
+    z-index: 2;
 }
 
 .dot {
