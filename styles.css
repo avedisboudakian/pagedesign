@@ -1,0 +1,150 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+    height: 515px;
+    width: 1275px;
+}
+
+#main-container {
+    display: flex;
+    height: 100%;
+    position: relative;
+    bottom:0;
+    left:0;
+    right:0;
+    top:0;
+    transform:skew(-5deg);
+}
+
+.text-container,
+.image-container {
+  bottom:0;
+  overflow:hidden;
+  position:absolute;
+  top:0;
+}
+
+#text-container {
+    background-image: url("/red ferrari left.jpeg");
+    bottom:-5%;
+    left:-5%;
+    right:-5%;
+    top:-5%;
+    transform:skew(5deg);
+    width: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left:-5%;  
+    right:50%;
+    background-position:center center;
+    background-size:cover;
+}
+
+.divider {
+    background-color:#000;
+    border-left:solid 10px #000;
+    border-right:solid 10px #000;
+    bottom:-5%;
+    left:48%;
+    position:absolute;
+    right:48%;
+    top:-5%;
+    z-index:1;
+  }
+
+#text-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#text-container li {
+    margin: 10px 0;
+}
+
+#text-container li:before {
+    content: "✓";
+    color: green;
+    margin-right: 10px;
+}
+
+#image-container {
+    width: 50%;
+    position: relative;
+    
+}
+
+.carousel-content {
+    position: relative;
+    height: 100%; /* Adjusted for thinner divider */
+}
+
+.carousel-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+    top: 0; right: 0; bottom: 0; left: 0;
+    left:50%;
+    right:-5%;
+    bottom:-5%;
+    left:-5%;
+    right:-5%;
+    top:-5%;
+    transform:skew(5deg);
+    background-position:center center;
+    background-size:cover;
+}
+
+.carousel-image.active {
+    display: block;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 2;
+}
+
+.learn-more {
+    background-color: yellow;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.learn-more:hover {
+    background-color: #ffd700;
+}
+
+.carousel-dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dot.active {
+    background-color: #717171;
+}
