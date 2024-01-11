@@ -172,3 +172,21 @@ body, html {
 .dot.active {
     background-color: #717171;
 }
+
+/* Styling for the bullet points */
+.carousel-bullets {
+    list-style: none; /* Removes default list styling */
+    padding: 0;
+    margin: 10px 0; /* Spacing above and below the list */
+}
+
+.carousel-bullets li {
+    color: white; /* Green text color for checkmarks */
+    margin: 5px 0; /* Spacing between list items */
+}
+
+.carousel-bullets li:before {
+    content: "✓ "; /* Green checkmark */
+    color: green; /* Ensures the checkmark is green */
+    margin-right: 5px; /* Space between checkmark and text */
+}
