@@ -5,23 +5,23 @@ document.addEventListener('DOMContentLoaded', function () {
     const overlayText = document.querySelector('.overlay-text');
 
     const contents = [
-        { 
+        {
             title: "CERAMIC COATING",
-            text: "Legends like Michael Jordan, LeBron James, and Kobe Bryant have defined the greatness in NBA history.",
+            text: "",
             link: "link-to-detailed-page-1.html", 
-            points: ["Hi there", "Point 2 for Slide 1"]
+            points: ["DURABILITY & EASY \n MAINTENACE", "GLOSSES PAINT", "BLOCKS CONTAMINIANTS"]
         },
         { 
             title: "$39.99 MONTHLY WASHES",
             text: "RECEIVE THAT SPECIAL CAR CARE ON A MONTHLY BASIS WITH OUR 'WE COME TO YOU' MEMBERSHIP",
             link: "link-to-detailed-page-2.html",
-            points: ["Point 1 for Slide 2", "Point 2 for Slide 2"] 
+            points: ["CONVENIENCE & FLEXIBILITY", "4+ WASHES A MONTH", "VEHICLE INCENTIVES"] 
         },
         { 
             title: "WE COME TO YOU",
             text: "WE OFFER MOBILE AUTO DETAILING! VIEW OUR DETAILING PACKAGES:",
             link: "link-to-detailed-page-3.html",
-            points: ["Point 1 for Slide 3", "Point 2 for Slide 3"] 
+            points: [] 
         },
         // Add more content as needed
     ];
@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
             <h2>${contents[newIndex].title}</h2>
             <p>${contents[newIndex].text}</p>
             ${bulletPointsHtml} <!-- Insert bullet points here -->
-            <a href="${contents[newIndex].link}" class="learn-more">Learn More</a>
+            <a href="${contents[newIndex].link}" class="learn-more">LEARN MORE</a>
         `;
 
         currentIndex = newIndex;

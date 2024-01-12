@@ -125,6 +125,8 @@ body, html {
     color: white;
     text-align: center;
     z-index: 2;
+    font-family:Verdana;
+	font-size:17px;
 }
 
 .learn-more {
@@ -178,6 +180,7 @@ body, html {
     list-style: none; /* Removes default list styling */
     padding: 0;
     margin: 10px 0; /* Spacing above and below the list */
+    text-align: center;
 }
 
 .carousel-bullets li {
@@ -189,4 +192,27 @@ body, html {
     content: "✓ "; /* Green checkmark */
     color: green; /* Ensures the checkmark is green */
     margin-right: 5px; /* Space between checkmark and text */
+}
+
+.click-here {
+	background-color:#e3aa24;
+	border-radius:25px;
+	border:3px solid #e3aa24;
+	display:inline-block;
+	cursor:pointer;
+	color:black;
+	font-family:Verdana;
+	font-size:25px;
+    font-weight: bold;
+	padding:10px 25px;
+	text-decoration:none;
+    z-index: 2;
+}
+.click-here:hover {
+	background-color:transparent;
+    color:#e3aa24;
+}
+.click-here:active {
+	position:relative;
+	top:1px;
 }
