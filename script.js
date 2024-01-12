@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
             title: "CERAMIC COATING",
             text: "",
             link: "link-to-detailed-page-1.html", 
-            points: ["DURABILITY & EASY \n MAINTENACE", "GLOSSES PAINT", "BLOCKS CONTAMINIANTS"]
+            points: ["DURABILITY & EASY MAINTENACE", "GLOSSES PAINT", "BLOCKS CONTAMINIANTS"]
         },
         { 
             title: "$39.99 MONTHLY WASHES",
@@ -40,13 +40,24 @@ document.addEventListener('DOMContentLoaded', function () {
         bulletPointsHtml += '</ul>';
 
         overlayText.innerHTML = `
-            <h2>${contents[newIndex].title}</h2>
-            <p>${contents[newIndex].text}</p>
+            <div class="text-wrapper">
+                <h2>${contents[newIndex].title}</h2>
+                <p>${contents[newIndex].text}</p>
+            </div>
             ${bulletPointsHtml} <!-- Insert bullet points here -->
             <a href="${contents[newIndex].link}" class="learn-more">LEARN MORE</a>
         `;
 
         currentIndex = newIndex;
+    }
+    const clickHereButton = document.querySelector('.click-here');
+
+    // Check if the button exists to avoid errors
+    if (clickHereButton) {
+        clickHereButton.addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent default action (navigation)
+            window.location.href = 'https://your-squarespace-site.com/your-page'; // Replace with your desired URL
+        });
     }
 
     dots.forEach((dot, index) => {
@@ -60,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function () {
         let newIndex = currentIndex + 1;
         if (newIndex >= images.length) newIndex = 0;
         updateCarousel(newIndex);
-    }, 2000); // Changes every 10 seconds
+    }, 5000); // Changes every 10 seconds
 
     // Initialize with the first item
     updateCarousel(0);

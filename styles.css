@@ -127,6 +127,10 @@ body, html {
     z-index: 2;
     font-family:Verdana;
 	font-size:17px;
+    display: flex; /* Continue using flexbox */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center-align children */
+    width: 100%; /* Full width */
 }
 
 .learn-more {
@@ -144,7 +148,9 @@ body, html {
     z-index: 2;
 }
 .learn-more:hover {
-	background-color:transparent;
+	background-color:#e3aa24;
+    color: black;
+    font-weight: bold;
 }
 .learn-more:active {
 	position:relative;
@@ -177,21 +183,27 @@ body, html {
 
 /* Styling for the bullet points */
 .carousel-bullets {
-    list-style: none; /* Removes default list styling */
+    list-style: none;
     padding: 0;
-    margin: 10px 0; /* Spacing above and below the list */
-    text-align: center;
+    margin: 0 auto; /* Center the bullet list */
+    text-align: center; /* Align text inside list items */
+    display: inline-block; /* Make the list an inline element */
+    width: auto; /* Let it size according to its content */
 }
 
 .carousel-bullets li {
-    color: white; /* Green text color for checkmarks */
-    margin: 5px 0; /* Spacing between list items */
+    color: white;
+    margin: 5px 0;
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+    justify-content: flex-start; /* Align items to the start of the flex container */
 }
 
 .carousel-bullets li:before {
-    content: "✓ "; /* Green checkmark */
-    color: green; /* Ensures the checkmark is green */
-    margin-right: 5px; /* Space between checkmark and text */
+    content: "✓ ";
+    color: #03c03c;
+    margin-right: 5px;
+    font-weight: bold;
 }
 
 .click-here {
@@ -215,4 +227,15 @@ body, html {
 .click-here:active {
 	position:relative;
 	top:1px;
+}
+
+.text-wrapper {
+    width: 500px; /* Adjust the width */
+    margin: 0 auto; /* Center the container */
+    text-align: center; /* Align text to the left */
+}
+
+.overlay-text h2 {
+    color: #e3aa24; /* Set the color of the titles */
+    /* Add any other styling for the title as needed */
 }
