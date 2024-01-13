@@ -52,14 +52,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     const clickHereButton = document.querySelector('.click-here');
 
-    // Check if the button exists to avoid errors
-    if (clickHereButton) {
-        clickHereButton.addEventListener('click', function(event) {
-            event.preventDefault(); // Prevent default action (navigation)
-            window.location.href = 'https://your-squarespace-site.com/your-page'; // Replace with your desired URL
-        });
-    }
-
     dots.forEach((dot, index) => {
         dot.addEventListener('click', () => {
             updateCarousel(index);
